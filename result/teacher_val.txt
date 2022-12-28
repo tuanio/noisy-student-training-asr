@@ -1,0 +1,112 @@
+Actuall: [ w aɪ ə t ʌ ŋ ɪ m p ɹ ɛ s d w ɪ ð h ʌ n i f ɹ ʌ m ɛ v ɹ i w ɪ n d]
+Predict: [ w aɪ ə t t ɑː ŋ ɪ m p ɹ ɛ s t w ɪ ð h ʌ n i f ɹ ʌ m ɪ v ɹ i w ɪ d]
+WER: 15.62%
+==========
+Actuall: [ w aɪ ə n ɪ ɹ ə w ə l p uː l f ɪ ɹ s t ə d ɹ ɔ k ɹ i eɪ ʃ ə n z ɪ n]
+Predict: [ w aɪ ə n ɪ ɹ ə w ə l p ʊ l f ɪ ɹ s t ə d ɹ ɔ k ɹ i eɪ ʃ ə n z ɪ n]
+WER: 3.12%
+==========
+Actuall: [ ɔ l ɪ z s ɛ d w ɪ ð aʊ t ə w ə d]
+Predict: [ ɔ l eɪ s ɛ d w ɪ ð aʊ t ə w ə d]
+WER: 12.50%
+==========
+Actuall: [ aɪ s ɪ t b ə n i θ ð aɪ l ʊ k s æ z t ʃ ɪ l d ɹ ə n d uː ɪ n ð ə n uː n s ʌ n w ɪ ð s oʊ l z ð æ t t ɹ ɛ m b l θ ɹ uː ð ɛ ɹ h æ p i aɪ l ɪ d z f ɹ ʌ m ə n ʌ n ə v ə d j ɛ t p ɹ ɑː d ɪ ɡ l ɪ n w ɚ d d ʒ ɔɪ]
+Predict: [ aɪ s ɪ t ð ə n eɪ θ aɪ l ʊ k s æ z t ʃ ɪ l d ɹ ə n d uː ɪ n ð ə n uː n s ʌ n w ɪ ð s oʊ l z ð æ t ɹ ɛ m b l θ ɹ uː ð ɛ ɹ h æ p i aɪ ə m l ɪ n z f ɹ ʌ m ə n ʌ n ə v ə d j ɛ t p ɹ ɑː n ɪ k l ɪ n w ɚ d ʒ ɔɪ l i]
+WER: 12.24%
+==========
+Actuall: [ aɪ d ɪ d n ɑː t ɹ ɔ ŋ m aɪ s ɛ l f s oʊ b ʌ t aɪ p l eɪ s t ə ɹ ɔ ŋ ɔ n ð i]
+Predict: [ aɪ d ɪ n ɑː t ɹ ɔ m aɪ s ɛ l s oʊ ʌ t aɪ p l eɪ s t ə ɹ ɔ ŋ ɔ n d ð i]
+WER: 14.29%
+==========
+Actuall: [ w ɛ ŋ k ɔ l d b ə f o ɹ aɪ t oʊ l d h aʊ h eɪ s t i l i aɪ d ɹ ɑː p t m aɪ f l aʊ ɚ z ɔː ɹ b ɹ eɪ k ɔ f f ɹ ʌ m ə ɡ eɪ m]
+Predict: [ w ɛ ŋ k ɔ l d b ə f o ɹ aɪ t oʊ l d h aʊ h eɪ s t i l i aɪ d ɹ ʌ f t m aɪ f l aʊ ɚ z ɔː ɹ b ɹ eɪ t ɔ f f ɚ ʌ m ə ɡ eɪ m]
+WER: 7.27%
+==========
+Actuall: [ ʃ æ l aɪ n ɛ v ɚ m ɪ s h oʊ m t ɔ k æ n d b l ɛ s ɪ ŋ æ n d ð ə k ɑː m ə ŋ k ɪ s ð æ t k ʌ m z t ʊ i t ʃ ɪ n t ə n n ɔː ɹ k aʊ n t ɪ t s t ɹ eɪ n d ʒ w ɛ n aɪ l ʊ k ʌ p t ə d ɹ ɑː p ɔ n ə n uː ɹ eɪ n d ʒ ʌ v w ɔ l z æ n d f l o ɹ z ə n ʌ ð ɚ h oʊ m ð ə n ð ɪ s]
+Predict: [ ʃ æ l ɪ ŋ n ɛ v ɚ m ɪ s h oʊ m t ɔ k æ n d b l ɛ s ɪ ŋ æ n d ð ə k ɑː m ɪ ŋ k ɪ s ð ə t k ʌ m s t ʊ i t ʃ ɪ n t ə n n ɔː ɹ k aʊ n t ɪ d s t ɹ eɪ d ʒ w ɛ n aɪ l ʊ k ʌ p ð ə d ɹ ɑː p ɔ n ə n uː ɹ eɪ n d ʒ ʌ v w ɔ l z æ n d f l ɔː ɹ d ə n ʌ ð ɚ h oʊ m d ə n ð ɪ s]
+WER: 8.80%
+==========
+Actuall: [ ə l æ s aɪ h æ v ɡ ɹ i v d s oʊ aɪ æ m h ɑ ɹ d t ə l ʌ v]
+Predict: [ ə l æ s aɪ h æ v ɡ ɹ i v d s oʊ aɪ æ m h ə ɹ t ə l ʌ f]
+WER: 11.11%
+==========
+Actuall: [ oʊ p ə n ð aɪ h ɑ ɹ t w aɪ d æ n d f oʊ l d w ɪ ð ɪ n ð ə w ɛ t w ɪ ŋ z ʌ v ð aɪ d ʌ v]
+Predict: [ oʊ p ð ə n aɪ h ɑ ɹ d w aɪ d æ n d f oʊ l d w ɪ ð ɪ n ð ə w ɛ n t w ɪ ŋ z ʌ v ð v aɪ d ʌ v]
+WER: 12.20%
+==========
+Actuall: [ k ʊ d ɪ t m i n t ə l æ s t ə l ʌ v s ɛ t p ɛ n d ʒ uː l ə s b ə t w i n s ɑː ɹ oʊ æ n d s ɑː ɹ oʊ]
+Predict: [ ʊ ɪ t m i n t ə l æ s t ə l ʌ v s ɛ t h ɛ n d uː l ə s b ə t w i n s ɑː ɹ oʊ æ n d s ɑː ɹ oʊ]
+WER: 8.51%
+==========
+Actuall: [ n eɪ aɪ ɹ æ ð ɚ θ ɹ ɪ l d d ɪ s t ɹ ʌ s t ɪ ŋ ɛ v ɹ i l aɪ t ð æ t s i m d t ə ɡ ɪ l d ð ɪ ɑː n w ɚ d p æ θ æ n d f ɪ ɹ d t ʊ oʊ v ɚ l i n ə f ɪ ŋ ɡ ɚ ɹ i v ə n]
+Predict: [ n eɪ aɪ aɪ ɹ æ ð ɚ θ ɹ i l d d ɪ s t ɹ ɛ s ɪ ŋ ɛ v ɹ i l aɪ t ð æ t s i m t ə ɡ ɪ l b i ɔ n w ɚ ʊ d p æ f æ n d f ɪ ɹ t ʊ oʊ v ɚ l i n t ə θ f ɪ ŋ ɡ ɚ ɹ i v]
+WER: 20.51%
+==========
+Actuall: [ æ n d ð oʊ aɪ h æ v ɡ ɹ oʊ n s ɚ ɹ i n æ n d s t ɹ ɔ ŋ s ɪ n s ð ɛ n aɪ θ ɪ ŋ k ð æ t ɡ ɑː d h ə z w ɪ l d ə s t ɪ l ɹ ə n uː ə b l f ɪ ɹ]
+Predict: [ æ n d ð oʊ aɪ h æ v ɡ ɹ oʊ m s ɚ ɹ i n æ n d s t ɹ ɔ ŋ s ɪ n s t ð ɛ n aɪ θ ɪ ŋ k æ t ɡ ɑː h ɪ z w ɪ l d ə s t ɪ l d ɹ ə n uː b l f ɪ ɹ]
+WER: 10.61%
+==========
+Actuall: [ oʊ l ʌ v oʊ t ɹ ɑː θ]
+Predict: [ oʊ l ʌ v oʊ t ɹ æ s]
+WER: 22.22%
+==========
+Actuall: [ æ n d l ʌ v b i f ɔ l s]
+Predict: [ æ n d l ʌ v b i f aʊ t s]
+WER: 16.67%
+==========
+Actuall: [ ɪ f h i t ə k i p w ʌ n oʊ θ m ʌ s t l uː z w ʌ n d ʒ ɔɪ b aɪ h ɪ z l aɪ f z s t ɑ ɹ f o ɹ t oʊ l d]
+Predict: [ ɪ f h i t k i p w ʌ n oʊ θ m ʌ s ə l uː z w ʌ n d ʒ ɔɪ b aɪ h ɪ z l aɪ f s s t ɑ ɹ f ɔː ɹ t h oʊ d]
+WER: 12.77%
+==========
+Actuall: [ s l oʊ t ə w ə l d ɡ ɹ i ɾ ɪ ŋ z k w ɪ k w ɪ ð ɪ t s oʊ l ɪ s t w ɛ n ð ɪ eɪ n d ʒ l z s p i k]
+Predict: [ s l oʊ t ə w ə l d ɹ i d ɪ ŋ z k w ɪ k w ɪ ð ɪ t s oʊ l l ɪ s t w ɛ n ð ɪ eɪ n d ʒ l s p i k]
+WER: 8.70%
+==========
+Actuall: [ ə ɹ ɪ ŋ ʌ v æ m ə θ ɪ s t aɪ k ʊ d n ɑː t w ɛ ɹ h ɪ ɹ p l eɪ n ɚ t ə m aɪ s aɪ t ð ə n ð æ t f ə s t k ɪ s]
+Predict: [ ə ɹ i ʌ v æ m ɪ θ ɪ s t aɪ k ʊ d n ɑː t w ɛ ɹ h ɪ ɹ p l eɪ n ɚ t uː m aɪ s aɪ t ð ɛ n ð æ t f ə s ʃ t k ɪ s]
+WER: 11.76%
+==========
+Actuall: [ ð æ t w ʌ z ð ə k ɹ ɪ z ə m ʌ v l ʌ v w ɪ t ʃ l ʌ v z oʊ ŋ k ɹ aʊ n w ɪ ð s æ ŋ k t ə f aɪ ɪ ŋ s w i t n ə s d ɪ d p ɹ ɪ s i d ð ə θ ə d ə p ɑː n m aɪ l ɪ p s w ʌ z f oʊ l d ə d d aʊ n ɪ n p ə f ɛ k t p ə p l s t eɪ t s ɪ n s w ɛ n ɪ n d i d aɪ h ə v b ɪ n p ɹ aʊ d æ n d s ɛ d m aɪ l ʌ v m aɪ oʊ n]
+Predict: [ ð æ t w ʌ z ð ə k ɹ ɪ s ə n ʌ v l ʌ v w ɪ t ʃ l ʌ v z oʊ n ŋ k ɹ aʊ n d w ɪ ð s æ ŋ k t ə f aɪ ɪ ŋ z w i k n ə s d ɪ d p ɚ s i d ð ə θ ə d ə p ɑː n m aɪ l ɪ t s w ʌ z ð f oʊ l d ð ə d d aʊ n ɪ n d p ə f ɛ k t p ə p l s t eɪ s ɪ n s w ɛ n ɪ n d i d aɪ h ə v b ɪ n t k ɚ ɹ aʊ d ɪ n d s ɛ d m aɪ l ʌ v m aɪ oʊ]
+WER: 12.59%
+==========
+Actuall: [ d ɪ ɹ ɪ s t t i t ʃ m i s oʊ t ə p o ɹ aʊ t ɡ ɹ æ ɾ ɪ t uː d æ z ð aʊ d ɑː s t ɡ ʊ d]
+Predict: [ b ɪ ɹ ɪ s t t i t ʃ m i s oʊ t ə p ɹ aʊ t ɡ ɹ æ ɾ ɪ t ʊ d æ z ð aʊ t d ʌ s t ɡ l ʊ t]
+WER: 17.50%
+==========
+Actuall: [ m ʌ s ʌ l m ə n z æ n d d ʒ aɪ ə ɚ z θ ɹ oʊ k ə t ʃ i f s æ ɾ ə s m aɪ l æ n d h æ v n oʊ ɹ uː θ f ɔ ɹ ɛ n i w i p ɪ ŋ]
+Predict: [ m ʌ s ə m ə n z æ n d ɡ aɪ ɚ z ð ɹ oʊ k ə t ʃ ə n s æ n d ə s m aɪ l æ n d h æ v n oʊ ɹ uː θ f ɔ ɹ ɛ n i w i p ɪ ŋ]
+WER: 17.54%
+==========
+Actuall: [ b ʌ t ð aʊ ɑ ɹ t n ɑː t s ʌ t ʃ ə l ʌ v ɚ m aɪ b ə l ʌ v d]
+Predict: [ b ʌ t ɪ ð aʊ ɑ ɹ t n ɑː t s ʌ t ʃ ə l ɛ v ɚ m aɪ ə l ʌ v d]
+WER: 10.71%
+==========
+Actuall: [ ð aʊ k æ n s t w eɪ t θ ɹ uː s ɑː ɹ oʊ æ n d s ɪ k n ə s t ə b ɹ ɪ ŋ s oʊ l z t ə t ʌ t ʃ æ n d θ ɪ ŋ k ɪ t s uː n w ɛ n ʌ ð ɚ z k ɹ aɪ t uː l eɪ t]
+Predict: [ ð aʊ k æ n d s t w eɪ t θ ɹ uː s ɑː ɹ oʊ ɪ n s ɪ k n ə ɪ s t ə b ɹ ɪ ŋ s oʊ l z t ə t ʌ t ʃ æ n d θ ɪ ŋ k ɪ t s uː n w ɪ n ʌ ð ɚ z k ɹ aɪ t uː l i t]
+WER: 8.70%
+==========
+Actuall: [ aɪ θ æ ŋ k ɔ l h uː h æ v l ʌ v d m i ɪ n ð ɛ ɹ h ɑ ɹ t s w ɪ ð θ æ ŋ k s æ n d l ʌ v f ɹ ʌ m m aɪ n]
+Predict: [ aɪ θ ɪ ŋ k ɔ l h uː h æ ð l ʌ v t m i ɪ n ð ɛ ɹ h ɑ ɹ t s w ɪ ð θ æ ŋ k s æ n d l ʌ v f ɹ ʌ m m aɪ ŋ]
+WER: 8.16%
+==========
+Actuall: [ oʊ t ə ʃ uː t m aɪ s oʊ l z f ʊ l m i n ɪ ŋ ɪ n t ʊ f j uː t ʃ ɚ j ɪ ɹ z ð æ t ð eɪ ʃ ʊ d l ɛ n d ɪ ɾ ʌ ɾ ɚ ɹ ə n s æ n d s ə l uː t l ʌ v ð æ t ɛ n d ʊɹ z f ɹ ʌ m l aɪ f ð æ t d ɪ s ə p ɪ ɹ z]
+Predict: [ oʊ ə ʃ uː d m aɪ s oʊ l z f l m i n ɪ ŋ ɪ n t ʊ f j uː t ʃ ɚ j ɪ ɹ z ð æ t eɪ ʃ ə d l ɛ n d ɪ t ʌ ɾ ɚ ɹ ɪ t s æ n d s ə l uː t l ʌ v ð æ t ɪ n d o ɹ ə z f ɹ ʌ m l aɪ f ð æ t d ɪ s ɪ p ɪ ɹ z]
+WER: 14.13%
+==========
+Actuall: [ ð ɛ n aɪ l ɔ ŋ t ɹ aɪ d b aɪ n æ t ʃ ɚ ɹ l ɪ l z ɹ ə s i v d ð ə k ʌ m f ɚ t f æ s t w aɪ l b ʌ d ɪ ŋ æ t ð aɪ s aɪ t m aɪ p ɪ l ɡ ɹ ɪ m z s t æ f ɡ eɪ v aʊ t ɡ ɹ i n l i v z w ɪ ð m ɔː ɹ n ɪ ŋ d uː z ɪ m p ə l d]
+Predict: [ ð ɛ n aɪ l ɔ ŋ t ɹ aɪ t b aɪ n æ t ʃ ɚ ɹ l l z ɹ ə s i v d ð ə k ʌ m f ɚ t f æ s t w aɪ l b ʌ d ɪ ŋ æ t ð aɪ s aɪ t m aɪ p oʊ ɡ ɹ æ m s t æ f ɡ eɪ ð aʊ t ɡ ɹ i n l i z w ɪ ð m ɔː ɹ n ɪ ŋ d uː z ɪ m p ɹ ə l]
+WER: 9.90%
+==========
+Actuall: [ aɪ l ʌ v ð i f ɹ i l i æ z m ɛ n s t ɹ aɪ v f ɔː ɹ ɹ aɪ t aɪ l ʌ v ð i p j ʊɹ l i æ z ð eɪ t ə n f ɹ ʌ m p ɹ eɪ z]
+Predict: [ aɪ l ʌ v ð i f ɹ i l i æ z m ɛ n s t ɹ aɪ v f ɔː ɹ ɹ aɪ d aɪ l ʌ v ð i p j ʊɹ d l i æ z ð eɪ t ə n f ɹ ʌ m p ɹ eɪ z]
+WER: 3.77%
+==========
+Actuall: [ aɪ l ʌ v ð i w ɪ ð ð ə p æ ʃ ə n p ʊ t t ə j uː z ɪ n m aɪ oʊ l d ɡ ɹ i f s æ n d w ɪ ð m aɪ t ʃ aɪ l d h ʊ d z f eɪ θ]
+Predict: [ aɪ l ʌ v ð i w ɪ ð ð ə p æ ʃ ə n t ʊ t ə j uː s æ n d m aɪ oʊ l d ɡ ɹ i p z ɪ n d w ɪ ð m aɪ t ʃ aɪ l h ʊ d z f eɪ]
+WER: 17.86%
+==========
+Actuall: [ aɪ l ʌ v ð i w ɪ ð ə l ʌ v aɪ s i m d t ə l uː z w ɪ ð m aɪ l ɔ s t s eɪ n t s aɪ l ʌ v ð i w ɪ ð ð ə b ɹ ɛ θ s m aɪ l z t ɪ ɹ z ʌ v ɔ l m aɪ l aɪ f æ n d ɪ f ɡ ɑː d t ʃ uː z aɪ ʃ æ l b ʌ t l ʌ v ð i b ɛ ɾ ɚ ɹ æ f t ɚ d ɛ θ]
+Predict: [ aɪ l ʌ v ð i w ɪ ð ə l ʌ v aɪ s i m d t ə l uː z w ɪ t m aɪ l ɔ s t s eɪ n t s aɪ l ʌ v ð i w ɪ ð ð ə b ɹ ɛ f s m aɪ l t h ɪ ɹ d ʌ v ɔ l oʊ m aɪ l aɪ ŋ f æ n d ɪ f ɡ ɑː n t uː z aɪ ʃ æ l b aɪ t l ʌ v ð i b ɛ ɾ ɚ æ f t ɚ d æ θ]
+WER: 11.32%
+==========

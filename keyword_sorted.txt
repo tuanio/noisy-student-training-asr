@@ -1,0 +1,77 @@
+aped - automatic phoneme error detection
+aped - automatic pronunciation error detection
+attention
+average pooling
+batch
+beam search
+beam width
+call
+call - computer-assisted language learning
+capt
+capt � computer-assisted pronunciation training
+cnn
+codebook
+codebooks
+computer vision - cv
+contrastive loss
+contrastive task - contrastive learning
+convolution
+convolution
+convolution subsampling
+cosine similarity
+crf
+crf - conditional random field
+ctc
+ctc - connectionist temporal classification
+decision-dierected learning
+deep belief network - dbn
+diversity loss
+downstream task
+dwt
+dwt
+e2e - end-to-end
+encoder
+feature encoder
+fine-tune
+fine-tuning
+global statistics supervision
+glu - gated linear unit
+gop � goodness of pronunciation
+ground truth
+hand-labeled data sets
+hmm
+hmm - hidden markov model
+imagenet
+language model
+lcs - longest common subsequence
+ler
+logits
+multiple-instance learning
+nst � noisy student training
+partial supervision
+per
+phoneme
+pointwise convolution
+pre-training
+pseudo label
+relative sinusoidal positional encoding scheme
+relu
+rnn
+self-attention
+self-labeling
+self-training
+semi-supervised learning
+sota - state-of-the-art
+state-of-the-art
+stride
+supervised learning
+temperature
+temporal classification
+time-step
+time-step
+transfer learning
+unsupervised learning
+vector
+weak supervision
+weak supervision
+wer
