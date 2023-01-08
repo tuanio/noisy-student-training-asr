@@ -121,6 +121,10 @@ Using the LCS algorithm to match the longest sequence between the real sample an
 
 You guys can get checkpoint file from here [tuannguyenvananh/nst-pretrained-model](https://www.kaggle.com/datasets/tuannguyenvananh/nst-pretrained-model).
 
+# Report
+
+The final report can get from here (Vietnamese version): [graduation-thesis_v3.pdf](https://github.com/tuanio/noisy-student-training-aped/files/10369639/graduation-thesis_v3.pdf).
+
 # Things to do
 
 - [ ] Restructure code.
