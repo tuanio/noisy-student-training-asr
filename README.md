@@ -18,7 +18,7 @@ Noisy Student Training seeks to improve on self-training and distillation in two
 
 ## About
 
-This GitHub is my source code when I did my graduate thesis on Automatic Pronunciation Error Detection (APED) based on ASR. With just a little tweaking of the input, this source code can be used well for speech recognition problems.
+This respository is my source code when I did my graduate thesis on Automatic Pronunciation Error Detection (APED) based on ASR. With just a little tweaking of the input, this source code can be used well for Automatic Speech Recognition problems.
 
 # How to use
 
