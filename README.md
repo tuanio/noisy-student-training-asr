@@ -14,8 +14,8 @@ The algorithm is iterated a few times by treating the student as a teacher to re
 
 Noisy Student Training seeks to improve on self-training and distillation in two ways. First, it makes the student larger than, or at least equal to, the teacher so the student can better learn from a larger dataset. Second, it adds noise to the student so the noised student is forced to learn harder from the pseudo labels. In Automatic Speech Recognition (ASR), to noise the student, it uses input noise such as speed Perturbation, Multi-style Training, Spec Augmentation data augmentation, and/or model noise such as dropout and stochastic depth during training.
 
-<div style="width: 20%; margin: 0 auto;">
- <img src="https://user-images.githubusercontent.com/30165828/213199008-c65f986d-e9ea-4f47-b963-234c56380c54.png" alt="nst" />
+<div>
+ <img src="https://user-images.githubusercontent.com/30165828/213199008-c65f986d-e9ea-4f47-b963-234c56380c54.png" alt="nst" style="width: 50%; margin: 0 auto;" />
 </div>
 ## About
 
