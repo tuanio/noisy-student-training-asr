@@ -19,8 +19,7 @@ class ConformerModel(nn.Module):
         time_masks=0.05,
         freq_width=27,
         time_width=0.05,
-        max_time_masks=10,
-        turn_on_augmentation: bool = True,
+        max_time_masks=10
     ):
         super().__init__()
         self.augmentation = AdaptiveSpecAugment(
@@ -39,7 +38,6 @@ class ConformerModel(nn.Module):
             nn.Dropout(dropout_outp_proj),
             nn.Linear(conformer_dim, vocab_size),
         )
-        self.turn_on_augmentation = turn_on_augmentation
 
     def freeze_conformer_blocks(self, n_block: int = 0):
         for l in range(n_block):
@@ -47,9 +45,9 @@ class ConformerModel(nn.Module):
                 p.requires_grad = False
 
     def forward(
-        self, input_values: Tensor, length: Tensor, attention_mask: Tensor = None
+        self, input_values: Tensor, length: Tensor, attention_mask: Tensor = None, predict: bool = False
     ):
-        if not self.turn_on_augmentation:
+        if not predict:
             input_values, length = self.augmentation(input_values, length)
 
         out, length = self.conv_subsampling(input_values, length)

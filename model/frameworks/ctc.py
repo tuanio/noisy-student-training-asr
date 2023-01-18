@@ -3,13 +3,18 @@ from torch import nn, Tensor
 
 
 class CTCModel(nn.Module):
-    def __init__(self, conformer_model: nn.Module):
+    def __init__(self, conformer_model: nn.Module, text_process):
         super().__init__()
         self.model = conformer_model
         self.ctc_loss = nn.CTCLoss()
+        self.text_process = text_process
 
-    def forward(self, **inputs):
-        return self.model(**inputs)
+    def forward(self, feat, feat_len, target, target_len):
+        out, out_len = self.model(feat, feat_len)
+        if target and target_len:
+            loss = self.criterion(out, target, out_len, target_len)
+            return out, out_len, loss
+        return out, out_len
 
     def criterion(
         self,
@@ -23,7 +28,7 @@ class CTCModel(nn.Module):
 
     def decode(encoder_output: Tensor):
         argmax = encoder_output.squeeze(0).argmax(-1)
-        return text_process.decode(argmax)
+        return self.text_process.decode(argmax)
 
     def recognize(inputs: Tensor, input_lengths: Tensor):
         outputs = list()

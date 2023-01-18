@@ -19,3 +19,9 @@ trainer:
         scheduler_state_dict:
     hyperparameters:
         ...
+
+cấu trúc của data sẽ như thế này
+{
+    'audio_filepath': ...
+    'text': "hello world"
+}

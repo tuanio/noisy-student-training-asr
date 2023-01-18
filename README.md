@@ -1,6 +1,32 @@
 # Introduction
 
-Automatic Pronunciation Error Detection (APED).
+## Noisy Student Training
+
+Noisy Student Training is a semi-supervised learning approach. It extends the idea of self-training and distillation with the use of equal-or-larger student models and noise added to the student during learning.
+
+It has three main steps:
+
+- 1. Train a teacher model on labeled speech.
+- 2. Use the teacher to generate pseudo labels on unlabeled speech.
+- 3. Train a student model on the combination of labeled speech and pseudo labeled speech.
+
+The algorithm is iterated a few times by treating the student as a teacher to relabel the unlabeled data and training a new student.
+
+Noisy Student Training seeks to improve on self-training and distillation in two ways. First, it makes the student larger than, or at least equal to, the teacher so the student can better learn from a larger dataset. Second, it adds noise to the student so the noised student is forced to learn harder from the pseudo labels. In Automatic Speech Recognition (ASR), to noise the student, it uses input noise such as speed Perturbation, Multi-style Training, Spec Augmentation data augmentation, and/or model noise such as dropout and stochastic depth during training.
+
+## About
+
+This GitHub is my source code when I did my graduate thesis on Automatic Pronunciation Error Detection (APED) based on ASR. With just a little tweaking of the input, this source code can be used well for speech recognition problems.
+
+# How to use
+
+## Structure
+
+## Dataset
+
+## Model config
+
+# Automatic Pronunciation Error Detection (APED).
 
 An APED system will first provide a predefined text (and, if necessary, a pre-existing voiceover for learners to listen to for reference). The learner's task is very simple: try to read this passage as correctly as possible. For example, a learner wants to learn how to pronounce the word “apple” (its phoneme sequence is “æ p l”), but the learner may mispronounce it as “ə p l”. In this case, we define the string "æ p l" as the standard pronunciation string and the string "ə p l" as the reader's string. The APED system will accurately predict where the user reads the wrong word "apple" in a specific position, thereby giving feedback to the learner so that the learner can promptly correct the mistake, gradually, the learner will improve your pronunciation.
 

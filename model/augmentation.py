@@ -8,11 +8,13 @@ import pathlib
 import numpy as np
 
 
-class SpeedPerturbation:
+class SpeedPerturbation(nn.Module):
     def __init__(self, sample_rate):
+        super().__init__()
         self.sample_rate = sample_rate
 
-    def __call__(self, audio_data):
+    @torch.inference_mode()
+    def forward(self, audio_data):
         #         speed_factor = random.choice([0.9, 1.0, 1.1])
         speed_factor = np.random.uniform(0.9, 1.1)
         if speed_factor == 1.0:  # no change
@@ -88,7 +90,7 @@ class SpecAugment(nn.Module):
         self.time_width = time_width
         self.mask_value = 0
 
-    @torch.no_grad()
+    @torch.inference_mode()
     def forward(self, input_spec, length):
         sh = input_spec.shape
         for idx in range(sh[0]):
@@ -123,7 +125,7 @@ class AdaptiveSpecAugment(nn.Module):
         self.max_time_masks = max_time_masks
         self.mask_value = 0
 
-    @torch.no_grad()
+    @torch.inference_mode()
     def forward(self, input_spec, length):
         sh = input_spec.shape
         for idx in range(sh[0]):
