@@ -93,13 +93,13 @@ class Trainer(ABC):
 
         for epoch in range(1, self.max_epochs + 1):
             self.train_epoch(model, dataloader, optimizer, scheduler, epoch)
-            self.test_epoch(model, dataloader, epoch)
+            self.test_epoch(model, dataloader, epoch, "valid")
 
             if self.sched_conf.interval == "epoch":
                 scheduler.step()
 
     def test(self, model: nn.Module, dataloader: DataLoader):
-        self.test_epoch(model, dataloader, 0)
+        self.test_epoch(model, dataloader, 0, "test")
 
     def predict(self, model: nn.Module, dataloader: DataLoader, outcome_path: str):
         self.test_epoch(model, dataloader, 0, outcome_path)
@@ -119,6 +119,7 @@ class Trainer(ABC):
         model: nn.Module,
         dataloader: DataLoader,
         epoch: int,
+        task: str = "test",
         outcome_path: str = None,
     ):
         pass
@@ -129,7 +130,12 @@ class TeacherTrainer(Trainer):
         super().__init__(**kwargs)
 
     def train_epoch(
-        self, model: nn.Module, dataloader: DataLoader, optimizer, scheduler, epoch: int
+        self,
+        model: nn.Module,
+        dataloader: DataLoader,
+        optimizer: Optimizer,
+        scheduler: _LRScheduler,
+        epoch: int,
     ):
         size = len(dataloader)
         pbar = tqdm(dataloader, total=size)
@@ -167,11 +173,16 @@ class TeacherTrainer(Trainer):
         model: nn.Module,
         dataloader: DataLoader,
         epoch: int,
+        task: str = "test",
         outcome_path: str = None,
     ):
         size = len(dataloader)
         pbar = tqdm(dataloader, total=size)
         cal_wer = WordErrorRate()
+
+        with open(outcome_path, "a") as f:
+            f.write("=" * 10 + f"{task} | Epoch: {epoch}" + "=" * 10)
+            f.write("\n")
 
         with torch.inference_mode():
             for batch, batch_idx in enumerate(tqdm):
@@ -192,13 +203,16 @@ class TeacherTrainer(Trainer):
                 ]
                 mean_wer = cal_wer(predict, actual).item()
 
-                if self.wandb_config.is_log:
-                    wandb.log({"val/loss": loss.item()})
-                    wandb.log({"val/wer": mean_wer})
+                with open(outcome_path, "a") as f:
+                    for pred, act, wer in zip(predict, actual, list_wer):
+                        f.write(f"PER    : {wer}\n")
+                        f.write(f"Actual : {act}\n")
+                        f.write(f"Predict: {pred}\n")
+                        f.write("=" * 20 + "\n")
 
-                    sched_name = scheduler.__class__.__name__
-                    last_lr = scheduler.get_last_lr()[0]
-                    wandb.log({f"lr-{sched_name}": last_lr})
+                if self.wandb_config.is_log:
+                    wandb.log({f"{task}/loss": loss.item()})
+                    wandb.log({f"{task}/wer": mean_wer})
 
                 pbar.set_description(
                     f"[Epoch: {epoch}] Loss: {loss.item():.2f} | WER: {mean_wer:.2f}%"
@@ -209,8 +223,21 @@ class StudentTrainer(Trainer):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-    def train_epoch(self, model, dataloader, optimizer, scheduler, epoch):
+    def train_epoch(
+        self,
+        model: nn.Module,
+        dataloader: DataLoader,
+        optimizer: Optimizer,
+        scheduler: _LRScheduler,
+        epoch: int,
+    ):
         pass
 
-    def test_epoch(self, model, dataloader, epoch, outcome_path):
+    def test_epoch(
+        self,
+        model: nn.Module,
+        dataloader: DataLoader,
+        epoch: int,
+        outcome_path: str = None,
+    ):
         pass
