@@ -1,3 +1,33 @@
+general:
+  seed: 12
+  max_epoch: 100
+  input_dim: 80
+
+vocab:
+  path: 
+
+feature:
+  mel_spectrogram_cfg:
+    n_fft: 1024
+    n_mels: ${general.input_dim}
+    win_length: 250
+    hop_length: 100
+
+data:
+  dataset_cfg:
+    manifest_path:
+      train:
+        label: 
+        unlabel:
+      valid:
+      test:
+      predict: 
+  dataloader_cfg:
+    batch_size: 32
+    num_workers: 2
+    pin_memory: True
+
+
 wandb:
   is_log: True
   cfg:

@@ -19,7 +19,7 @@ class ConformerModel(nn.Module):
         time_masks=0.05,
         freq_width=27,
         time_width=0.05,
-        max_time_masks=10
+        max_time_masks=10,
     ):
         super().__init__()
         self.augmentation = AdaptiveSpecAugment(
@@ -45,7 +45,11 @@ class ConformerModel(nn.Module):
                 p.requires_grad = False
 
     def forward(
-        self, input_values: Tensor, length: Tensor, attention_mask: Tensor = None, predict: bool = False
+        self,
+        input_values: Tensor,
+        length: Tensor,
+        attention_mask: Tensor = None,
+        predict: bool = False,
     ):
         if not predict:
             input_values, length = self.augmentation(input_values, length)

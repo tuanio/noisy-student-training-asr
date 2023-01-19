@@ -23,7 +23,7 @@ class Text:
         self.blank_id = 0
 
     def tokenize(self, data):
-        return data
+        return data.split()
 
     def text2int(self, s: str):
         return torch.Tensor([self.label_vocabs[i] for i in s])

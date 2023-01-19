@@ -20,7 +20,7 @@ class Trainer(ABC):
         optim_conf: dict,
         scheduler_conf: dict,
         text_process,
-        device: str = 'cpu',
+        device: str = "cpu",
     ):
         super().__init__()
         self.device = device
@@ -42,7 +42,9 @@ class Trainer(ABC):
         )
         if self.scheduler_conf.sched_name == "OneCycleLR":
             # for training only
-            self.scheduler_conf.update({"total_steps": len(dataloader) * self.max_epochs})
+            self.scheduler_conf.update(
+                {"total_steps": len(dataloader) * self.max_epochs}
+            )
         scheduler = getattr(optim.lr_scheduler, self.scheduler_conf.sched_name)(
             optimizer, **self.scheduler_conf
         )
@@ -259,9 +261,11 @@ class StudentTrainer(Trainer):
                     predicted[i] = self.text_process.tokenize(predicted[i])
 
             predicted = [self.text_process.text2int(s) for s in predicted]
-            
+
             target_len = torch.IntTensor([s.size(0) for s in predicted]).to(self.device)
-            target = pad_sequence(predicted, batch_first=True).to(self.device, torch.int)
+            target = pad_sequence(predicted, batch_first=True).to(
+                self.device, torch.int
+            )
 
             optimizer.zero_grad()
 
@@ -284,7 +288,9 @@ class StudentTrainer(Trainer):
 
             pbar.set_description(f"[Epoch: {epoch}] Loss: {loss.item():.2f}")
 
-            self.save_ckpt(student_model, optimizer, scheduler, epoch, epoch * batch_idx)
+            self.save_ckpt(
+                student_model, optimizer, scheduler, epoch, epoch * batch_idx
+            )
 
     def test_epoch(
         self,

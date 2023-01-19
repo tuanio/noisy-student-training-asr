@@ -21,7 +21,12 @@ trainer:
         ...
 
 cấu trúc của data sẽ như thế này
+label
 {
     'audio_filepath': ...
     'text': "hello world"
+}
+unlabel
+{
+    'audio_filepath': ...
 }
