@@ -131,3 +131,7 @@ The final report can get from here (Vietnamese version): [graduation-thesis_v3.p
 - [ ] Publish pretrained for Teacher and Student.
 
 <!-- wandb login 2cfd4b5c7e2828d412e5f871efea3a4c582efe18 -->
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=tuanio/noisy-student-training-asr&type=Date)](https://star-history.com/#tuanio/noisy-student-training-asr&Date)
