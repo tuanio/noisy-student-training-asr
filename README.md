@@ -128,7 +128,7 @@ The final report can get from here (Vietnamese version): [graduation-thesis_v3.p
 # Things to do
 
 - [ ] Restructure code.
-- [ ] Publish pretrained for Teacher and Student.
+- [x] Publish pretrained for Teacher and Student.
 
 <!-- wandb login 2cfd4b5c7e2828d412e5f871efea3a4c582efe18 -->
 
