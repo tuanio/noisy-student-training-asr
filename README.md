@@ -1,3 +1,13 @@
+# Noisy Student Training for Automatic Pronunciation Error Detection (APED)
+
+[![Stars](https://img.shields.io/github/stars/tuanio/noisy-student-training-asr?style=social)](https://github.com/tuanio/noisy-student-training-asr/stargazers)
+[![Fork](https://img.shields.io/github/forks/tuanio/noisy-student-training-asr?style=social)](https://github.com/tuanio/noisy-student-training-asr/network/members)
+[![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-Lightning-orange.svg)](https://www.pytorch.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+---
+
 # Introduction
 
 Automatic Pronunciation Error Detection (APED).
