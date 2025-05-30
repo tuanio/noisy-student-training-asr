@@ -65,7 +65,7 @@ Dataset can get from here [tuannguyenvananh/libri-phone](https://www.kaggle.com/
 
 The result show that:
 - The language model is not suitable for this problem because of the small amount of text data.
-- Student's PER is reduced by 26% compared to that of teacher, successfully implementing supervised learning technique for the problem of phonemic sequence recognition.
+- Student's PER is reduced by 35.3% compared to that of teacher, successfully implementing supervised learning technique for the problem of phonemic sequence recognition.
 
 #### Some example on Phoneme Sequence Prediction
 
