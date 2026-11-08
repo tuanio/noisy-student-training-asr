@@ -16,7 +16,7 @@ class TextProcess:
                 json.load(open("phones_mapping.json", "r", encoding="utf-8")).keys()
             )
         else:
-            vocab = list(json.load(open("timit_vocab.json", "r")))
+            vocab = list(json.load(open("timit_vocab.json", "r", encoding="utf-8")))
         self.vocabs = self.base_vocabs + vocab
 
         self.n_class = len(self.vocabs)
